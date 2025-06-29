@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayForm Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px 30px;
+            padding: 8px;
+            font-size: 15px;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border-radius: 5px;
+            border: 2px solid lightgray;
+        }
+        input[type="text"],
+        input[type="number"],
+        /* input[type="radio"], */
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        fieldset{
+            border: 2px solid #ccc;
+            background-color: #fff;
+        }
+        h1{
+            text-align: center;
+        }
+        input[type="submit"],input[type="reset"]{
+            width: 60%;
+            color: white;
+            background-color: rgb(74, 134, 74);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 22%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="submit"]:hover{
+            background-color: greenyellow;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <h3>For Home</h3>
+    <a href="C:\Users\User\Desktop\Apni Duniya\Index.html" target="_blank">Home</a>
+    <h3>For Info Page</h3>
+    <a href="C:\Users\User\Desktop\Apni Duniya\Page2.html" target="_blank">Information</a>
+    <hr>
+    <div class="container">
+    <form action="" method="get">
+        <h1>Payment Form</h1>
+        <hr>
+        <p><b>You can pay here after giving all required info</b></p>
+        <h2>Contact Info</h2>
+        <p><em>Kindly give the required information carefully and correct</em> </p>
+        <p>Name: <input type="text" name="name" id="" required placeholder="Enter your Name"></p>
+        <p>
+            
+            <fieldset>
+                <legend>Gender</legend>
+            Male <input type="radio" name="gender" id="gender" required>
+            Female <input type="radio" name="gender" id="gender" required>
+        </fieldset>
+        </p>
+        <p>Adress: <textarea name="adress" id="adress" cols="40" rows="5" placeholder="Give your proprer adress"></textarea></p>
+        <p>Email: <input type="email" name="mail" id="mail" required placeholder="anybody@gmail.com"></p>
+        <p>PinCode: <input type="number" name="pincode" id="pincode" required placeholder="123576">----Dont share your pin!</p>
+        <hr>
+        <h2>Payment Method</h2>
+        <p>
+            <select name="cardType" id="cardType" required>
+            <option value="select">*--Select card type--*</option>            
+            <option value="Debitcard">DebitCard</option>
+            <option value="jazzcash">JazzCash</option>
+            <option value="easypaisa">EasyPaisa</option>
+            <option value="mastercard">MasterCard</option>
+        </select>
+
+        </p>
+        <select name="select" id="select">
+            <option value="#">---Who Pay---</option>
+            <option value="Self">Self</option>
+            <option value="friend">Non-Blood Relative</option>
+            <option value="son">Blood Relative</option>
+        </select>
+        <p>Card Number: <input type="number" name="CardNo" id="CardNo" required placeholder="111-233-546-00"></p>
+        <p>Card Expire date: <input type="date" name="expiredate" id="expiredate" placeholder="EX date"></p>
+        <p>Password: <input type="password" name="password" id="password" required placeholder="Enter your password"></p>
+        
+        <input type="submit" value="Pay Now">
+        <br><br>
+        <input type="reset" value="Clear all">
+
+    </div>
+    </form>
+
+</body>
+</html>
